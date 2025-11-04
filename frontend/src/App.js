@@ -111,6 +111,23 @@ function App() {
     setUser(null);
   };
 
+  // Netlify/production ortamında backend URL'i yoksa beyaz ekran yerine açıklayıcı mesaj göster
+  if (!BACKEND_URL || BACKEND_URL.trim() === '') {
+    return (
+      <div className="min-h-screen flex items-center justify-center p-6">
+        <div className="max-w-xl text-center">
+          <h1 className="text-2xl font-bold mb-3">Konfigürasyon Hatası</h1>
+          <p className="text-gray-700 mb-4">
+            REACT_APP_BACKEND_URL ayarlı değil. Netlify’da Site Settings → Build & deploy → Environment altında
+            <code className="bg-gray-100 px-2 py-1 mx-1">REACT_APP_BACKEND_URL</code> değişkenini, Railway backend adresinizle
+            (ör. <code className="bg-gray-100 px-2 py-1">https://&lt;proje&gt;.up.railway.app</code>) ekleyip yeniden deploy edin.
+          </p>
+          <p className="text-sm text-gray-500">CORS için backend tarafında <code className="bg-gray-100 px-2 py-1">CORS_ORIGINS</code> içine Netlify domaininizi eklemeyi unutmayın.</p>
+        </div>
+      </div>
+    );
+  }
+
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
