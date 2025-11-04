@@ -30,8 +30,10 @@ app = FastAPI()
 # Create a router with the /api prefix
 api_router = APIRouter(prefix="/api")
 
-# Upload folder for product images
-UPLOAD_FOLDER = Path("/app/frontend/public/uploads")
+# Upload folder for product images (use project path on Render)
+# Previously "/app/frontend/public/uploads" caused permission errors on Render.
+# Anchor to repo root so it lives under /opt/render/project/src/frontend/public/uploads.
+UPLOAD_FOLDER = ROOT_DIR.parent / "frontend" / "public" / "uploads"
 UPLOAD_FOLDER.mkdir(parents=True, exist_ok=True)
 
 # Enums
