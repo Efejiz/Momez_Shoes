@@ -1,0 +1,7 @@
+[build]
+  # Proje kökünde değil, `frontend/` içinde derleme yap
+  base = "frontend"
+  # Tek komut: `npm run build`
+  command = "npm run build"
+  # CRA/Craco çıktısı: `build/`
+  publish = "build"
