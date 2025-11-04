@@ -1,5 +1,6 @@
-#!/usr/bin/env bash
-set -euo pipefail
+#!/bin/sh
+# POSIX-compatible startup for Railpack (container may use /bin/sh)
+set -eu
 
 # Railpack startup script: run Python backend with Uvicorn
 
@@ -7,11 +8,12 @@ set -euo pipefail
 cd backend
 
 # Upgrade pip and install dependencies
-python -m pip install --upgrade pip
-pip install -r requirements.txt
+# Install dependencies
+python -m pip install --upgrade pip || true
+python -m pip install -r requirements.txt
 
 # Pick port from environment (Railpack sets $PORT)
-PORT="${PORT:-8000}"
+PORT=${PORT:-8000}
 
 # Start FastAPI app
-python -m uvicorn server:app --host 0.0.0.0 --port "$PORT"
+exec python -m uvicorn server:app --host 0.0.0.0 --port "$PORT"
