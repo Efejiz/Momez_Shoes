@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Auth</title>
+</head>
+<body>
+    <h1>Test OAuth Redirect</h1>
+    <p>Simulating OAuth callback...</p>
+    <script>
+        // Simulate OAuth callback with session_id in hash
+        const testSessionId = 'test_session_123';
+        window.location.hash = `#session_id=${testSessionId}`;
+        
+        console.log('Hash set:', window.location.hash);
+        console.log('Testing auth flow...');
+        
+        // Redirect to main site after 2 seconds
+        setTimeout(() => {
+            console.log('Redirecting...');
+            window.location.href = 'https://login-tester-7.preview.emergentagent.com/';
+        }, 2000);
+    </script>
+</body>
+</html>

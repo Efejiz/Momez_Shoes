@@ -1,0 +1,120 @@
+{
+  "summary": {
+    "total_tests": 18,
+    "passed_tests": 18,
+    "failed_tests": 0,
+    "success_rate": 100.0,
+    "timestamp": "2025-10-21T10:39:40.197787",
+    "admin_session_token": "4fb83d7b-b5fb-49da-b..."
+  },
+  "detailed_results": [
+    {
+      "test": "Admin Login Success",
+      "success": true,
+      "details": "Session token received: 4fb83d7b-b5fb-49da-b...",
+      "timestamp": "2025-10-21T10:39:39.518093"
+    },
+    {
+      "test": "Session Validation - Admin Role (Cookie)",
+      "success": true,
+      "details": "User role: admin",
+      "timestamp": "2025-10-21T10:39:39.527194"
+    },
+    {
+      "test": "Admin Endpoint - Get Admin Orders",
+      "success": true,
+      "details": "Successfully accessed admin/orders",
+      "timestamp": "2025-10-21T10:39:39.540197"
+    },
+    {
+      "test": "Admin Endpoint - Get Best Selling Report",
+      "success": true,
+      "details": "Successfully accessed admin/reports/best-selling",
+      "timestamp": "2025-10-21T10:39:39.559190"
+    },
+    {
+      "test": "Admin Endpoint - Get Regions Report",
+      "success": true,
+      "details": "Successfully accessed admin/reports/regions",
+      "timestamp": "2025-10-21T10:39:39.574092"
+    },
+    {
+      "test": "Admin Login Failure - Wrong Password",
+      "success": true,
+      "details": "Correctly returned 401 Unauthorized",
+      "timestamp": "2025-10-21T10:39:39.840618"
+    },
+    {
+      "test": "Admin Login Failure - Wrong Email",
+      "success": true,
+      "details": "Correctly returned 401 Unauthorized",
+      "timestamp": "2025-10-21T10:39:39.846951"
+    },
+    {
+      "test": "Admin Login Failure - Non-Admin User",
+      "success": true,
+      "details": "Correctly returned 401 Unauthorized",
+      "timestamp": "2025-10-21T10:39:39.854061"
+    },
+    {
+      "test": "Admin Login Failure - Missing Email",
+      "success": true,
+      "details": "Correctly returned 401 Unauthorized",
+      "timestamp": "2025-10-21T10:39:39.859965"
+    },
+    {
+      "test": "Admin Login Failure - Missing Password",
+      "success": true,
+      "details": "Correctly returned 401 Unauthorized",
+      "timestamp": "2025-10-21T10:39:40.143951"
+    },
+    {
+      "test": "Admin Login Failure - Missing Both Fields",
+      "success": true,
+      "details": "Correctly returned 401 Unauthorized",
+      "timestamp": "2025-10-21T10:39:40.148950"
+    },
+    {
+      "test": "Session Validation - Invalid Token",
+      "success": true,
+      "details": "Correctly returned 401 for invalid token",
+      "timestamp": "2025-10-21T10:39:40.155846"
+    },
+    {
+      "test": "Access Control - Admin Orders - No Token",
+      "success": true,
+      "details": "Correctly denied access without token",
+      "timestamp": "2025-10-21T10:39:40.160292"
+    },
+    {
+      "test": "Access Control - Best Selling Report - No Token",
+      "success": true,
+      "details": "Correctly denied access without token",
+      "timestamp": "2025-10-21T10:39:40.165205"
+    },
+    {
+      "test": "Access Control - Regions Report - No Token",
+      "success": true,
+      "details": "Correctly denied access without token",
+      "timestamp": "2025-10-21T10:39:40.170299"
+    },
+    {
+      "test": "Access Control - Admin Orders - Invalid Token",
+      "success": true,
+      "details": "Correctly denied access with invalid token",
+      "timestamp": "2025-10-21T10:39:40.180309"
+    },
+    {
+      "test": "Access Control - Best Selling Report - Invalid Token",
+      "success": true,
+      "details": "Correctly denied access with invalid token",
+      "timestamp": "2025-10-21T10:39:40.189220"
+    },
+    {
+      "test": "Access Control - Regions Report - Invalid Token",
+      "success": true,
+      "details": "Correctly denied access with invalid token",
+      "timestamp": "2025-10-21T10:39:40.194773"
+    }
+  ]
+}

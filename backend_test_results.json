@@ -1,0 +1,737 @@
+{
+  "summary": {
+    "total_tests": 121,
+    "passed_tests": 121,
+    "failed_tests": 0,
+    "success_rate": 100.0,
+    "timestamp": "2025-10-22T12:05:37.911069"
+  },
+  "detailed_results": [
+    {
+      "test": "Admin Login Success",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:22.701790"
+    },
+    {
+      "test": "Admin Login Wrong Password",
+      "success": true,
+      "details": "Status: 401, Expected: 401",
+      "timestamp": "2025-10-22T12:05:23.064859"
+    },
+    {
+      "test": "Admin Login Wrong Email",
+      "success": true,
+      "details": "Status: 401, Expected: 401",
+      "timestamp": "2025-10-22T12:05:23.072425"
+    },
+    {
+      "test": "User Registration",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:23.329547"
+    },
+    {
+      "test": "Duplicate Registration",
+      "success": true,
+      "details": "Status: 400, Expected: 400",
+      "timestamp": "2025-10-22T12:05:23.338973"
+    },
+    {
+      "test": "User Login Success",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:23.651695"
+    },
+    {
+      "test": "User Login Wrong Password",
+      "success": true,
+      "details": "Status: 401, Expected: 401",
+      "timestamp": "2025-10-22T12:05:24.039592"
+    },
+    {
+      "test": "User Login Non-existent Email",
+      "success": true,
+      "details": "Status: 401, Expected: 401",
+      "timestamp": "2025-10-22T12:05:24.047102"
+    },
+    {
+      "test": "Add Product Review",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:24.086834"
+    },
+    {
+      "test": "Add Duplicate Review",
+      "success": true,
+      "details": "Status: 400, Expected: 400",
+      "timestamp": "2025-10-22T12:05:24.094961"
+    },
+    {
+      "test": "Add Review Invalid Rating",
+      "success": true,
+      "details": "Status: 400, Expected: 400",
+      "timestamp": "2025-10-22T12:05:24.108144"
+    },
+    {
+      "test": "Get Product Reviews",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:24.117665"
+    },
+    {
+      "test": "Get Product Rating",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:24.125252"
+    },
+    {
+      "test": "Get Empty Wishlist",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:24.148739"
+    },
+    {
+      "test": "Add to Wishlist",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:24.157955"
+    },
+    {
+      "test": "Add Duplicate to Wishlist",
+      "success": true,
+      "details": "Status: 400, Expected: 400",
+      "timestamp": "2025-10-22T12:05:24.167504"
+    },
+    {
+      "test": "Get Wishlist with Items",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:24.180961"
+    },
+    {
+      "test": "Remove from Wishlist",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:24.191216"
+    },
+    {
+      "test": "Remove Non-existent from Wishlist",
+      "success": true,
+      "details": "Status: 404, Expected: 404",
+      "timestamp": "2025-10-22T12:05:24.202770"
+    },
+    {
+      "test": "Create Coupon",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:24.215810"
+    },
+    {
+      "test": "Get All Coupons",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:24.230394"
+    },
+    {
+      "test": "Apply Valid Coupon",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:24.239466"
+    },
+    {
+      "test": "Apply Invalid Coupon",
+      "success": true,
+      "details": "Status: 404, Expected: 404",
+      "timestamp": "2025-10-22T12:05:24.247472"
+    },
+    {
+      "test": "Create Duplicate Coupon",
+      "success": true,
+      "details": "Status: 400, Expected: 400",
+      "timestamp": "2025-10-22T12:05:24.260699"
+    },
+    {
+      "test": "Update Shipping Tracking",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:24.317480"
+    },
+    {
+      "test": "Get Tracking Info",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:24.330594"
+    },
+    {
+      "test": "Get Tracking Non-existent Order",
+      "success": true,
+      "details": "Status: 404, Expected: 404",
+      "timestamp": "2025-10-22T12:05:24.341403"
+    },
+    {
+      "test": "Request Order Return",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:24.401207"
+    },
+    {
+      "test": "Request Duplicate Return",
+      "success": true,
+      "details": "Status: 400, Expected: 400",
+      "timestamp": "2025-10-22T12:05:24.414491"
+    },
+    {
+      "test": "Get User Returns",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:24.428790"
+    },
+    {
+      "test": "Get All Returns Admin",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:24.441554"
+    },
+    {
+      "test": "Update Return Status",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:24.454597"
+    },
+    {
+      "test": "Return Non-existent Order",
+      "success": true,
+      "details": "Status: 404, Expected: 404",
+      "timestamp": "2025-10-22T12:05:24.464210"
+    },
+    {
+      "test": "Submit Contact Form",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:24.474810"
+    },
+    {
+      "test": "Get Contact Messages Admin",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:24.485097"
+    },
+    {
+      "test": "Update Contact Status",
+      "success": true,
+      "details": "Status: 404, Expected: 404",
+      "timestamp": "2025-10-22T12:05:24.495391"
+    },
+    {
+      "test": "Submit Invalid Contact Form",
+      "success": true,
+      "details": "Status: 422, Expected: 422",
+      "timestamp": "2025-10-22T12:05:24.500555"
+    },
+    {
+      "test": "Get Dashboard Analytics",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:24.520969"
+    },
+    {
+      "test": "Get Best Selling Products",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:24.535110"
+    },
+    {
+      "test": "Get Active Regions Report",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:24.545791"
+    },
+    {
+      "test": "Get User Addresses",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:24.556932"
+    },
+    {
+      "test": "Add New Address",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:24.570487"
+    },
+    {
+      "test": "Add Second Address",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:24.582934"
+    },
+    {
+      "test": "Get User Addresses After Adding",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:24.593059"
+    },
+    {
+      "test": "Update Address",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:24.603573"
+    },
+    {
+      "test": "Delete Address",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:24.617371"
+    },
+    {
+      "test": "Get Invalid Address",
+      "success": true,
+      "details": "Status: 404, Expected: 404",
+      "timestamp": "2025-10-22T12:05:24.627354"
+    },
+    {
+      "test": "Update Invalid Address",
+      "success": true,
+      "details": "Status: 404, Expected: 404",
+      "timestamp": "2025-10-22T12:05:24.637566"
+    },
+    {
+      "test": "Delete Invalid Address",
+      "success": true,
+      "details": "Status: 404, Expected: 404",
+      "timestamp": "2025-10-22T12:05:24.647592"
+    },
+    {
+      "test": "Change Password Success",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:25.379473"
+    },
+    {
+      "test": "Change Password Wrong Old",
+      "success": true,
+      "details": "Status: 401, Expected: 401",
+      "timestamp": "2025-10-22T12:05:25.386164"
+    },
+    {
+      "test": "Change Password Back",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:25.937830"
+    },
+    {
+      "test": "Request Password Reset",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:25.949551"
+    },
+    {
+      "test": "Request Reset Invalid Email",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:25.961379"
+    },
+    {
+      "test": "Confirm Reset Invalid Token",
+      "success": true,
+      "details": "Status: 400, Expected: 400",
+      "timestamp": "2025-10-22T12:05:25.968901"
+    },
+    {
+      "test": "Search Products by Query",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:25.981223"
+    },
+    {
+      "test": "Search Products by Category",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:25.990903"
+    },
+    {
+      "test": "Search Products by Price Range",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:26.003439"
+    },
+    {
+      "test": "Search Products Sort price_asc",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:26.014475"
+    },
+    {
+      "test": "Search Products Sort price_desc",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:26.025157"
+    },
+    {
+      "test": "Search Products Sort name",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:26.037884"
+    },
+    {
+      "test": "Search Products Sort created_at",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:26.052925"
+    },
+    {
+      "test": "Search Products Pagination",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:26.082526"
+    },
+    {
+      "test": "Search Products Combined Filters",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:26.099743"
+    },
+    {
+      "test": "Create Checkout Session",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:26.164331"
+    },
+    {
+      "test": "Get Checkout Status",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:26.176946"
+    },
+    {
+      "test": "Stripe Webhook Endpoint",
+      "success": true,
+      "details": "Status: 200 (Webhook endpoint accessible)",
+      "timestamp": "2025-10-22T12:05:26.186477"
+    },
+    {
+      "test": "Health Check GET profile/addresses",
+      "success": true,
+      "details": "Status: 401, Expected: 401",
+      "timestamp": "2025-10-22T12:05:26.193092"
+    },
+    {
+      "test": "Health Check POST profile/addresses",
+      "success": true,
+      "details": "Status: 401, Expected: 401",
+      "timestamp": "2025-10-22T12:05:26.201143"
+    },
+    {
+      "test": "Health Check POST auth/change-password",
+      "success": true,
+      "details": "Status: 401, Expected: 401",
+      "timestamp": "2025-10-22T12:05:26.215229"
+    },
+    {
+      "test": "Health Check POST auth/reset-password",
+      "success": true,
+      "details": "Status: 422, Expected: 422",
+      "timestamp": "2025-10-22T12:05:26.221930"
+    },
+    {
+      "test": "Health Check POST auth/confirm-reset-password",
+      "success": true,
+      "details": "Status: 422, Expected: 422",
+      "timestamp": "2025-10-22T12:05:26.227950"
+    },
+    {
+      "test": "Health Check POST products/search",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:26.236467"
+    },
+    {
+      "test": "Health Check POST checkout/create-session",
+      "success": true,
+      "details": "Status: 401, Expected: 401",
+      "timestamp": "2025-10-22T12:05:26.242644"
+    },
+    {
+      "test": "Health Check POST webhook/stripe",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:26.247660"
+    },
+    {
+      "test": "Health Check POST auth/register",
+      "success": true,
+      "details": "Status: 422, Expected: 422",
+      "timestamp": "2025-10-22T12:05:26.254739"
+    },
+    {
+      "test": "Health Check POST auth/login",
+      "success": true,
+      "details": "Status: 422, Expected: 422",
+      "timestamp": "2025-10-22T12:05:26.259840"
+    },
+    {
+      "test": "Health Check GET wishlist",
+      "success": true,
+      "details": "Status: 401, Expected: 401",
+      "timestamp": "2025-10-22T12:05:26.264646"
+    },
+    {
+      "test": "Health Check POST coupons/apply",
+      "success": true,
+      "details": "Status: 401, Expected: 401",
+      "timestamp": "2025-10-22T12:05:26.269972"
+    },
+    {
+      "test": "Health Check GET admin/coupons",
+      "success": true,
+      "details": "Status: 401, Expected: 401",
+      "timestamp": "2025-10-22T12:05:26.275989"
+    },
+    {
+      "test": "Health Check POST contact",
+      "success": true,
+      "details": "Status: 422, Expected: 422",
+      "timestamp": "2025-10-22T12:05:26.282177"
+    },
+    {
+      "test": "Health Check GET admin/analytics/dashboard",
+      "success": true,
+      "details": "Status: 401, Expected: 401",
+      "timestamp": "2025-10-22T12:05:26.286162"
+    },
+    {
+      "test": "Auth Required GET profile/addresses",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:26.297938"
+    },
+    {
+      "test": "Auth Required GET auth/me",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:26.306237"
+    },
+    {
+      "test": "Auth Required GET cart",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:26.314906"
+    },
+    {
+      "test": "Auth Required GET orders",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:26.324120"
+    },
+    {
+      "test": "Auth Required GET wishlist",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:26.335953"
+    },
+    {
+      "test": "Auth Required GET orders/returns",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:26.345131"
+    },
+    {
+      "test": "Auth Required GET admin/coupons",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:26.357064"
+    },
+    {
+      "test": "Auth Required GET admin/contacts",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:26.383810"
+    },
+    {
+      "test": "Auth Required GET admin/analytics/dashboard",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:26.430708"
+    },
+    {
+      "test": "Auth Required GET admin/returns",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:26.467569"
+    },
+    {
+      "test": "Error Handling GET profile/addresses/nonexistent",
+      "success": true,
+      "details": "Status: 404, Expected: 404",
+      "timestamp": "2025-10-22T12:05:26.492796"
+    },
+    {
+      "test": "Error Handling PUT profile/addresses/nonexistent",
+      "success": true,
+      "details": "Status: 404, Expected: 404",
+      "timestamp": "2025-10-22T12:05:26.503278"
+    },
+    {
+      "test": "Error Handling DELETE profile/addresses/nonexistent",
+      "success": true,
+      "details": "Status: 404, Expected: 404",
+      "timestamp": "2025-10-22T12:05:26.514232"
+    },
+    {
+      "test": "Error Handling GET checkout/status/nonexistent",
+      "success": true,
+      "details": "Status: 404, Expected: 404",
+      "timestamp": "2025-10-22T12:05:26.523351"
+    },
+    {
+      "test": "Error Handling GET products/nonexistent/reviews",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:26.529414"
+    },
+    {
+      "test": "Error Handling GET products/nonexistent/rating",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:26.537428"
+    },
+    {
+      "test": "Error Handling DELETE wishlist/remove/nonexistent",
+      "success": true,
+      "details": "Status: 404, Expected: 404",
+      "timestamp": "2025-10-22T12:05:26.546508"
+    },
+    {
+      "test": "Error Handling GET orders/nonexistent/tracking",
+      "success": true,
+      "details": "Status: 404, Expected: 404",
+      "timestamp": "2025-10-22T12:05:26.555591"
+    },
+    {
+      "test": "API Root",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:26.562666"
+    },
+    {
+      "test": "Get All Products",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:26.571114"
+    },
+    {
+      "test": "Get Men Products",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:26.578634"
+    },
+    {
+      "test": "Get Women Products",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:26.587006"
+    },
+    {
+      "test": "Get Sports Products",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:26.595564"
+    },
+    {
+      "test": "Get New_Arrivals Products",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:26.603597"
+    },
+    {
+      "test": "Get Featured Products",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:26.611672"
+    },
+    {
+      "test": "Get Shipping Regions",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:26.619743"
+    },
+    {
+      "test": "Get Product Details",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-10-22T12:05:26.654290"
+    },
+    {
+      "test": "Get User Profile (No Auth)",
+      "success": true,
+      "details": "Status: 401, Expected: 401",
+      "timestamp": "2025-10-22T12:05:26.661099"
+    },
+    {
+      "test": "Get Cart (No Auth)",
+      "success": true,
+      "details": "Status: 401, Expected: 401",
+      "timestamp": "2025-10-22T12:05:26.664812"
+    },
+    {
+      "test": "Get Orders (No Auth)",
+      "success": true,
+      "details": "Status: 401, Expected: 401",
+      "timestamp": "2025-10-22T12:05:26.669872"
+    },
+    {
+      "test": "Add to Cart (No Auth)",
+      "success": true,
+      "details": "Status: 401, Expected: 401",
+      "timestamp": "2025-10-22T12:05:26.675963"
+    },
+    {
+      "test": "Get Admin Orders (No Auth)",
+      "success": true,
+      "details": "Status: 401, Expected: 401",
+      "timestamp": "2025-10-22T12:05:26.684124"
+    },
+    {
+      "test": "Create Product (No Auth)",
+      "success": true,
+      "details": "Status: 401, Expected: 401",
+      "timestamp": "2025-10-22T12:05:26.689668"
+    },
+    {
+      "test": "Get Best Selling Report (No Auth)",
+      "success": true,
+      "details": "Status: 401, Expected: 401",
+      "timestamp": "2025-10-22T12:05:26.695145"
+    },
+    {
+      "test": "Get Regions Report (No Auth)",
+      "success": true,
+      "details": "Status: 401, Expected: 401",
+      "timestamp": "2025-10-22T12:05:26.702225"
+    },
+    {
+      "test": "Session Data with Mock ID",
+      "success": true,
+      "details": "Status: 400 (Expected failure with mock session)",
+      "timestamp": "2025-10-22T12:05:37.884962"
+    },
+    {
+      "test": "Invalid Product ID",
+      "success": true,
+      "details": "Status: 404, Expected: 404",
+      "timestamp": "2025-10-22T12:05:37.892499"
+    },
+    {
+      "test": "Invalid Endpoint",
+      "success": true,
+      "details": "Status: 404, Expected: 404",
+      "timestamp": "2025-10-22T12:05:37.897499"
+    },
+    {
+      "test": "Invalid Cart Data",
+      "success": true,
+      "details": "Status: 401, Expected: 401",
+      "timestamp": "2025-10-22T12:05:37.904274"
+    }
+  ]
+}
